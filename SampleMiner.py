@@ -1868,7 +1868,7 @@ def NCBI_sequence_download(input_file,output_file_route, report_file, fasta_head
 	import urllib.request, time
 	from Bio import Entrez
 	
-	Entrez.email = "nab.schriefer@gmail.com"
+	Entrez.email = "user@my.email"
 	
 	#Entrez.api_key = "MyAPIkey"
 	
@@ -1950,7 +1950,7 @@ def NCBI_chromosome_plasmid_download(accession_number, id_list, fasta_header, fh
 	import urllib.request, time
 	from Bio import Entrez
 	
-	Entrez.email = "nab.schriefer@gmail.com"
+	Entrez.email = "user@my.email"
 	
 	#Entrez.api_key = "MyAPIkey"
 	
@@ -2129,7 +2129,7 @@ def NCBI_assembly_download(accession_number, fasta_header, fh, rf):
 	import urllib.request, time
 	from Bio import Entrez
 	
-	Entrez.email = "nab.schriefer@gmail.com"
+	Entrez.email = "user@my.email"
 	
 	#Entrez.api_key = "MyAPIkey"
 	
