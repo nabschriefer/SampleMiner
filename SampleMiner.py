@@ -89,7 +89,7 @@ def Start():
 			
 			print('You are using Patric.\n')
 			
-			input_file = DatabasesTsvFilesDir + "PATRIC_E coli_Complete genome_Metadata.tsv"
+			input_file = DatabasesTsvFilesDir + "PATRIC_Metadata.tsv"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -97,7 +97,7 @@ def Start():
 			
 				result = Tsv_to_list_dicts(input_file)
 				
-				output_file = DatabasesDictionariesDir + "PATRIC_E coli_Complete genome_Metadata_list.txt"
+				output_file = DatabasesDictionariesDir + "PATRIC_Metadata_list.txt"
 				
 				f = open(output_file, "w", encoding='utf-8')
 				f.write(str(result))
@@ -122,7 +122,7 @@ def Start():
 			
 			print('Uploading Patric database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "PATRIC_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "PATRIC_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -163,7 +163,7 @@ def Start():
 			
 			print('Uploading Patric database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "PATRIC_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "PATRIC_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -208,7 +208,7 @@ def Start():
 			
 			print('Uploading Patric database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "PATRIC_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "PATRIC_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -248,8 +248,8 @@ def Start():
 				
 				metadata_csv_file_headers = ('Biosample accession' + ',' + 'Isolate name' + ',' + 'Species' + ',' + 'Isolation country' + ',' + 'Host' + ',' + 'Isolation source' + ',' + 'Serovar' + ',' + 'Pathovar' + ',' + 'MLST' + ',' + 'Assembly id' + ',' + 'Genome quality' + ',' + 'Keep entry?' + '\n')
 				
-				statistics_file = SamplesMetadataDir + 'Patric isolates metadata statistics.txt'
-				statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata statistics.csv'
+				statistics_file = SamplesMetadataDir + 'Patric isolates metadata for statistics.txt'
+				statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata for statistics.csv'
 				
 				sampling_report_file = ReportsDir + 'Patric sampling report.txt'
 				
@@ -276,7 +276,7 @@ def Start():
 			
 			print('Uploading Patric database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "PATRIC_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "PATRIC_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -316,8 +316,8 @@ def Start():
 				
 				metadata_csv_file_headers = ('Biosample accession' + ',' + 'Isolate name' + ',' + 'Species' + ',' + 'Isolation country' + ',' + 'Host' + ',' + 'Isolation source' + ',' + 'Serovar' + ',' + 'Pathovar' + ',' + 'MLST' + ',' + 'Assembly id' + ',' + 'Genome quality' + ',' + 'Keep entry?' + '\n')
 				
-				statistics_file = SamplesMetadataDir + 'Patric isolates metadata statistics.txt'
-				statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata statistics.csv'
+				statistics_file = SamplesMetadataDir + 'Patric isolates metadata for statistics.txt'
+				statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata for statistics.csv'
 				
 				sampling_report_file = ReportsDir + 'Patric sampling report.txt'
 				
@@ -393,7 +393,7 @@ def Start():
 			
 			isolates_metadata_keys = (species_key, isolation_country_key, pathovar_1_key, serovar_key, st_type_key, host_key)
 			
-			statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata statistics.csv'
+			statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata for statistics.csv'
 			sample_summary_file = SamplesMetadataDir + 'Patric isolates metadata summary.txt'
 
 			File_checking_result = File_checking(statistics_csv_file)
@@ -433,7 +433,7 @@ def Start():
 			
 			isolates_metadata_keys = (species_key, isolation_country_key, pathovar_1_key, serovar_key, st_type_key, host_key)
 			
-			statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata statistics.csv'
+			statistics_csv_file = SamplesMetadataDir + 'Patric isolates metadata for statistics.csv'
 			sample_summary_file = SamplesMetadataDir + 'Enterobase isolates metadata summary.txt'
 			
 			File_checking_result = File_checking(statistics_csv_file)
@@ -463,10 +463,10 @@ def Start():
 			print('The four tsv files will first be imported as Python dictionaries\n\n')
 			print('Starting importations...\n\n')
 			
-			input_file_1 = DatabasesTsvFilesDir + "Enterobase_E coli_Complete genome_Metadata_1.tsv"
-			input_file_2 = DatabasesTsvFilesDir + "Enterobase_E coli_Complete genome_Metadata_2.tsv"
-			input_file_3 = DatabasesTsvFilesDir + "Enterobase_E coli_Complete genome_Metadata_3.tsv"
-			input_file_4 = DatabasesTsvFilesDir + "Enterobase_E coli_Complete genome_Metadata_4.tsv"
+			input_file_1 = DatabasesTsvFilesDir + "Enterobase_Metadata_1.tsv"
+			input_file_2 = DatabasesTsvFilesDir + "Enterobase_Metadata_2.tsv"
+			input_file_3 = DatabasesTsvFilesDir + "Enterobase_Metadata_3.tsv"
+			input_file_4 = DatabasesTsvFilesDir + "Enterobase_Metadata_4.tsv"
 			
 			File_checking_result = File_checking(input_file_1)
 			file1 = File_checking_result
@@ -480,25 +480,25 @@ def Start():
 			if file1 == True and file2 == True and file3 == True and file4 == True:
 			
 				result = Tsv_to_list_dicts(input_file_1)
-				output_file_1 = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list_1.txt"
+				output_file_1 = DatabasesDictionariesDir + "Enterobase_Metadata_list_1.txt"
 				f = open(output_file_1, "w", encoding='utf-8')
 				f.write(str(result))
 				f.close()
 				
 				result = Tsv_to_list_dicts(input_file_2)
-				output_file_2 = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list_2.txt"
+				output_file_2 = DatabasesDictionariesDir + "Enterobase_Metadata_list_2.txt"
 				f = open(output_file_2, "w", encoding='utf-8')
 				f.write(str(result))
 				f.close()
 				
 				result = Tsv_to_list_dicts(input_file_3)
-				output_file_3 = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list_3.txt"
+				output_file_3 = DatabasesDictionariesDir + "Enterobase_Metadata_list_3.txt"
 				f = open(output_file_3, "w", encoding='utf-8')
 				f.write(str(result))
 				f.close()
 				
 				result = Tsv_to_list_dicts(input_file_4)
-				output_file_4 = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list_4.txt"
+				output_file_4 = DatabasesDictionariesDir + "Enterobase_Metadata_list_4.txt"
 				f = open(output_file_4, "w", encoding='utf-8')
 				f.write(str(result))
 				f.close()
@@ -531,7 +531,7 @@ def Start():
 				
 				dictionaries_list = Dictionaries_merger(dictionaries_list_1, dictionaries_list_2, dictionaries_list_3, dictionaries_list_4, index)
 				
-				output_file = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list.txt"
+				output_file = DatabasesDictionariesDir + "Enterobase_Metadata_list.txt"
 				f = open(output_file, "w", encoding='utf-8')
 				f.write(str(dictionaries_list))
 				f.close()
@@ -554,7 +554,7 @@ def Start():
 			
 			print('Uploading Enterobase database to memory...')
 			
-			input_file = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "Enterobase_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -595,7 +595,7 @@ def Start():
 			
 			print('Uploading Enterobase database to memory...')
 			
-			input_file = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "Enterobase_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -640,7 +640,7 @@ def Start():
 			
 			print('Uploading Enterobase database to memory...')
 			
-			input_file = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "Enterobase_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -734,7 +734,7 @@ def Start():
 			
 			print('Uploading Enterobase database to memory...')
 			
-			input_file = DatabasesDictionariesDir + "Enterobase_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "Enterobase_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -2167,9 +2167,10 @@ def NCBI_assembly_download(accession_number, fasta_header, fh, rf):
 		Clear_screen(OperatingSystem)
 		
 	else:
-		
 		label = os.path.basename(url)
 		link = os.path.join(url,label+'_genomic.fna.gz')
+		if OperatingSystem == 'nt':
+			link = link.replace('\\', '/')
 		assembly_file = DownloadedSequencesDir + accession_number + '_WGS_assembly' + '.fna.gz'
 		urllib.request.urlretrieve(link, assembly_file)
 	
@@ -2372,7 +2373,7 @@ INSTRUCTIONS
 
 1- Create an Anaconda environment named SampleMiner, containing Python 3.8 or later, Biopython, Pandas and Matplotlib.
 
-2- Optional step: Open a terminal window, go to Terminal>Preferences>Shell and in the pull down menu 'When exiting shell' choose
+2- Optional step: Open a terminal window, go to Terminal>Preferences>Shell and in the pull-down menu 'When exiting shell' choose
    'close shell if clean exit'. This allows the terminal window to close automatically once you quit SampleMiner.
 
 3- Make a 'SampleMiner' folder within your local 'applications' directory.
@@ -2380,22 +2381,22 @@ INSTRUCTIONS
 4- Save the SampleMiner.py file to your local 'applications' directory within the 'SampleMiner' folder.
 
 5- Add to the same folder the bash file below named 'SampleMiner.command'. This bash file opens the terminal screen,
-   activates the SampleMiner Anaconda environment and runs SampleMiner.py within it.
+   activates the SampleMiner Anaconda environment and runs SampleMiner.py within it (This step works only in MacOS).
 
 	#!/bin/bash
 	source /Users/.../opt/anaconda3/bin/activate sampleminer
 	/Users/.../Applications/SampleMiner/SampleMiner.py
 
-6- Create a shortcut of the 'SampleMiner.command' bash file and place it on your desktop.
+6- Create a shortcut of the 'SampleMiner.command' bash file and place it on your desktop (This step works only in MacOS).
 
-7- To run SampleMiner.py just double click the shortcut to the 'SampleMiner.command' bash file.
+7- To run SampleMiner.py in MacOS just double click the shortcut to the 'SampleMiner.command' bash file. To run SampleMiner in Windows open the Anaconda SampleMiner environment terminal and enter the entire path to SampleMiner with the command "python path/SampleMiner.py".
 
-8- Run SampleMiner.py once and then choose '50' to quit it. This will instal the runtime directories of SampleMiner
+8- Run SampleMiner.py once and then choose '50' to quit it. This will install the runtime directories of SampleMiner
    in the local 'Documents' directory.
 
 9- Place the Enterobase and Patrick tsv files into the 'Documents/SampleMiner/databases tsv files' directory.
 
-10- If you already have the up-to-date Enterobase and Patrick 'Complete genome_Metadata_list' dictionaries files imported
+10- If you already have the up-to-date Enterobase and Patrick 'Metadata_list' dictionaries files imported
    from the tsv files above, just place them in the directory 'Documents/SampleMiner/databases dictionaries'.
 
 11- If you don't have the up-to-date dictionaries, then run SampleMiner and choose option 1 so you can import the tsv files
@@ -2414,20 +2415,20 @@ INSTRUCTIONS
    metadata of the isolates that are used in the keywords search of options '2', '3', '4', '5', '10', '11', '12', '13'.
 
 3- Options '2' to '5' serve to keyword search Patric dictionaries, while '10' to '13' do the same for Enterobase.
-   '2', '3', '10' and '11' are usefull to quickly evaluate the appropriateness of the keywords chosen. '4', '5', 12 and '13' fetch
+   '2', '3', '10' and '11' are useful to quickly evaluate the appropriateness of the keywords chosen. '4', '5', 12 and '13' fetch
    the NCBI Biosample accession numbers and isolates metadata from Patric and Enterobase. The accession numbers will be stored in
    directory 'Documents/SampleMiner/mined samples/default[or a custom folder]/samples accession numbers', while the metadata will be
    stored as csv files in directory 'Documents/SampleMiner/mined samples/default[or a custom folder]/samples metadata'. These options
    also create Python txt files with dictionaries containing the same metadata and stored in the same directory, which may be explored
-   programatically. Besides creating the '[Patric or Enterobase] isolates metadata.csv' and '[Patric or Enterobase] isolates metadata.
+   programmatically. Besides creating the '[Patric or Enterobase] isolates metadata.csv' and '[Patric or Enterobase] isolates metadata.
    txt' files, the program will also create the '[Patric or Enterobase] isolates metadata for statistics.csv' and '[Patric or Enterobase]
    isolates metadata for statistics.txt' files. These are just copies of the two files above that will not be used by SampleMiner, but 
-   may explored by the user for various personal analises. Finally, these accession number fetching options also create a log of the
+   may explored by the user for various personal analyses. Finally, these accession number fetching options also create a log of the
    searching process and store it as 'Documents/SampleMiner/mined samples/default[or a custom folder]/reports/[Patric or Enterobase]
    sampling report.txt'.
 
-4- Options '6' and '14' can be used for determining which accession numbers should be effectivelly set to fetch chromosome, plasmid and
-   assembly sequences from NCBI. Before using these options, edit the the entries in the 'Keep record?' column within the '[Patric or 
+4- Options '6' and '14' can be used for determining which accession numbers should be effectively set to fetch chromosome, plasmid and
+   assembly sequences from NCBI. Before using these options, edit the entries in the 'Keep record?' column within the '[Patric or 
    Enterobase] isolates metadata.csv' files. Keep the 'y' option for those isolates that you want to fetch sequences from NCBI. Change it
    to 'n' for those isolates you don't want to download the sequences. These options will first back up the original accession numbers into
    the file 'Documents/SampleMiner/mined samples/default[or a custom folder]/samples metadata/[Patric or Enterobase]_accession
@@ -2436,11 +2437,11 @@ INSTRUCTIONS
 
 5- Options '7', '8', '15' and '16' summarize important metadata of samples in table ('7' and '15') or graph formats ('8' and '16'). Tables
    will be automatically saved as 'Documents/SampleMiner/mined samples/default[or a custom folder]/samples metadata/[Patric or Enterobase]
-   isolates metadata summary.txt. Graphs may be saved by the user as they are displayed on screen. The graphs will be displayed in sucession
-   with a new graphic poping up as a previous is closed by the user. To close the last graph it will be necessary to click in the close red
-   buton at the left top of the window, then highlight the SampleMinder.py running terminal window and press any key.
+   isolates metadata summary.txt. Graphs may be saved by the user as they are displayed on screen. The graphs will be displayed in succession
+   with a new graphic popping up as a previous is closed by the user. To close the last graph, it will be necessary to click in the close red
+   button at the left top of the window, then highlight the SampleMinder.py running terminal window and press any key.
 
-6- Option '40' fetches the chromosome, plasmid and assembly sequences contained in file '[Patric or Enterobase]_accession numbers.txt'
+6- Option '40' fetches the chromosome, plasmid and assembly sequences contained in file 'accession numbers.txt'
    from NCBI. It stores the downloaded sequence files in directory 'Documents/SampleMiner/mined samples/default[or a custom folder]/
    downloaded sequences', plus all fasta headers and a log file in directory 'Documents/SampleMiner/mined samples/default[or a custom folder]
    /reports'.
@@ -2453,7 +2454,7 @@ DATABASE TEMPLATE
 
 - Edits for the Main Menu and 'Start()' action options per added DATABASE:
 
-(Substituting: Patric/Enterobase with DATABASE; E. coli with PATHOGEN; variables with VAR1, VAR2 ... VARn; Accession number attribute with DATABASE NCBI ACCESSION NUMBER FIELD):
+(Substituting: Patric/Enterobase with DATABASE; variables with VAR1, VAR2 ... VARn; Accession number attribute with DATABASE NCBI ACCESSION NUMBER FIELD):
 
 		# Main Menu:
 
@@ -2469,7 +2470,7 @@ DATABASE TEMPLATE
 			
 			print('You are using DATABASE.\n')
 			
-			input_file = DatabasesTsvFilesDir + "DATABASE_PATHOGEN_Complete genome_Metadata.tsv"
+			input_file = DatabasesTsvFilesDir + "DATABASE_Metadata.tsv"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -2477,7 +2478,7 @@ DATABASE TEMPLATE
 			
 				result = Tsv_to_list_dicts(input_file)
 				
-				output_file = DatabasesDictionariesDir + "DATABASE_PATHOGEN_Complete genome_Metadata_list.txt"
+				output_file = DatabasesDictionariesDir + "DATABASE_Metadata_list.txt"
 				
 				f = open(output_file, "w", encoding='utf-8')
 				f.write(str(result))
@@ -2502,7 +2503,7 @@ DATABASE TEMPLATE
 			
 			print('Uploading DATABASE database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "DATABASE_PATHOGEN_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "DATABASE_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -2543,7 +2544,7 @@ DATABASE TEMPLATE
 			
 			print('Uploading DATABASE database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "DATABASE_PATHOGEN_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "DATABASE_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -2588,7 +2589,7 @@ DATABASE TEMPLATE
 			
 			print('Uploading DATABASE database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "DATABASE_PATHOGEN_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "DATABASE_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -2624,8 +2625,8 @@ DATABASE TEMPLATE
 				
 				metadata_csv_file_headers = ('Keep entry?' + ',' + 'DATABASE NCBI ACCESSION NUMBER FIELD' + ',' + 'VAR1' + ',' + 'VAR2' + ',' + 'VAR3' + ',' + 'VAR4' + ',' + 'VAR5' + ',' + ... + '\n')
 				
-				statistics_file = SamplesMetadataDir + 'DATABASE isolates metadata statistics.txt'
-				statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata statistics.csv'
+				statistics_file = SamplesMetadataDir + 'DATABASE isolates metadata for statistics.txt'
+				statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata for statistics.csv'
 				
 				sampling_report_file = ReportsDir + 'DATABASE sampling report.txt'
 				
@@ -2652,7 +2653,7 @@ DATABASE TEMPLATE
 			
 			print('Uploading DATABASE database to memory...\n\n')
 			
-			input_file = DatabasesDictionariesDir + "DATABASE_E coli_Complete genome_Metadata_list.txt"
+			input_file = DatabasesDictionariesDir + "DATABASE_Metadata_list.txt"
 			
 			File_checking_result = File_checking(input_file)
 			
@@ -2688,8 +2689,8 @@ DATABASE TEMPLATE
 				
 				metadata_csv_file_headers = ('Keep entry?' + ',' + 'DATABASE NCBI ACCESSION NUMBER FIELD' + ',' + 'VAR1' + ',' + 'VAR2' + ',' + 'VAR3' + ',' + 'VAR4' + ',' + 'VAR5' + ',' + ... + '\n')
 
-				statistics_file = SamplesMetadataDir + 'DATABASE isolates metadata statistics.txt'
-				statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata statistics.csv'
+				statistics_file = SamplesMetadataDir + 'DATABASE isolates metadata for statistics.txt'
+				statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata for statistics.csv'
 				
 				sampling_report_file = ReportsDir + 'DATABASE sampling report.txt'
 				
@@ -2765,7 +2766,7 @@ DATABASE TEMPLATE
 			
 			isolates_metadata_keys = (VAR1, VAR2, VAR3, VAR4, VAR5, ...)
 			
-			statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata statistics.csv'
+			statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata for statistics.csv'
 			sample_summary_file = SamplesMetadataDir + 'DATABASE isolates metadata summary.txt'
 		
 			File_checking_result = File_checking(statistics_csv_file)
@@ -2805,7 +2806,7 @@ DATABASE TEMPLATE
 			
 			isolates_metadata_keys = (VAR1, VAR2, VAR3, VAR4, VAR5, ...)
 			
-			statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata statistics.csv'
+			statistics_csv_file = SamplesMetadataDir + 'DATABASE isolates metadata for statistics.csv'
 			sample_summary_file = SamplesMetadataDir + 'DATABASE isolates metadata summary.txt'
 			
 			File_checking_result = File_checking(statistics_csv_file)
